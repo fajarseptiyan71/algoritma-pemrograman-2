@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS overtime_rates (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    hour INT NOT NULL UNIQUE,
+    percentage FLOAT NOT NULL
+);
+
+DROP TABLE IF EXISTS overtime_rates;
